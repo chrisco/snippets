@@ -1,3 +1,4 @@
+// O(n)
 function primeFactors(num) {
 	let primeFactors = [];
 	let divisor = 3;
