@@ -32,7 +32,7 @@ For the JSDoc, I did this:
 
 ```
 $ npm install jsdoc --save-dev
-$ ./node_modules/jsdoc/jsdoc.js reverseInPlace.js // The only file with JSDoc comments so far
+$ ./node_modules/jsdoc/jsdoc.js snippets/reverseInPlace.js // The only file with JSDoc comments so far
 ```
 
 See JSDocs here: [./out/index.html](out/index.html) (open file in browser).
