@@ -101,6 +101,507 @@
 
     
 
+    <h4 class="name" id="getGCD"><span class="type-signature"></span>getGCD<span class="signature">(n1, n2)</span><span class="type-signature"> &rarr; {number}</span></h4>
+
+    
+
+
+
+<div class="description">
+    Calculates the Greatest Common Divisor (GCD) of two numbers
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>n1</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The first number</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>n2</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The second number</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="getGCD.js.html">getGCD.js</a>, <a href="getGCD.js.html#line11">line 11</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    The GCD of n1 and n2
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">number</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const n1 = 12;
+const n2 = 15;
+console.log(getGCD(n1, n2)); // 3</code></pre>
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getNthFib"><span class="type-signature"></span>getNthFib<span class="signature">(nthFib)</span><span class="type-signature"> &rarr; {number}</span></h4>
+
+    
+
+
+
+<div class="description">
+    Calculates the nth Fibonacci number (O(n) time complexity)
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>nthFib</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Which Fibonacci number we want</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="getNthFibonacciNumber.js.html">getNthFibonacciNumber.js</a>, <a href="getNthFibonacciNumber.js.html#line9">line 9</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    The nthFib Fibonacci number
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">number</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const nthFib = 12;
+console.log(getNthFib(nthFib)); // 144</code></pre>
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="getNthFibRecursive"><span class="type-signature"></span>getNthFibRecursive<span class="signature">(nthFib)</span><span class="type-signature"> &rarr; {number}</span></h4>
+
+    
+
+
+
+<div class="description">
+    Returns the nthFib Fibonacci number (O(2^n) time complexity -- http://stackoverflow.com/a/360773)
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>nthFib</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Which Fibonacci number we want</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="getNthFibonacciNumber.js.html">getNthFibonacciNumber.js</a>, <a href="getNthFibonacciNumber.js.html#line31">line 31</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    The nthFib Fibonacci number
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">number</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const nthFib = 12;
+console.log(getNthFibRecursive(nthFib)); // 144</code></pre>
+
+
+
+        
+            
+
+    
+
     <h4 class="name" id="reverseInPlace"><span class="type-signature"></span>reverseInPlace<span class="signature">(words)</span><span class="type-signature"> &rarr; {string}</span></h4>
 
     
@@ -228,7 +729,7 @@
 
         
 <div class="param-desc">
-    The same string of words, except each word is now reversed.
+    The same string of words, except each word is now reversed
 </div>
 
 
@@ -250,7 +751,7 @@
 
     <h5>Example</h5>
     
-    <pre class="prettyprint"><code>var words = 'See spot run';
+    <pre class="prettyprint"><code>const words = 'See spot run';
 console.log(reverseInPlace(words)); // eeS tops nur</code></pre>
 
 
@@ -271,13 +772,13 @@ console.log(reverseInPlace(words)); // eeS tops nur</code></pre>
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#reverseInPlace">reverseInPlace</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#getGCD">getGCD</a></li><li><a href="global.html#getNthFib">getNthFib</a></li><li><a href="global.html#getNthFibRecursive">getNthFibRecursive</a></li><li><a href="global.html#reverseInPlace">reverseInPlace</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.2</a> on Sun Oct 23 2016 10:18:43 GMT-0400 (EDT)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.2</a> on Sun Oct 23 2016 17:29:24 GMT-0400 (EDT)
 </footer>
 
 <script> prettyPrint(); </script>

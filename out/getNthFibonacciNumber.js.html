@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: reverseInPlace.js</title>
+    <title>JSDoc: Source: getNthFibonacciNumber.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: reverseInPlace.js</h1>
+    <h1 class="page-title">Source: getNthFibonacciNumber.js</h1>
 
     
 
@@ -27,17 +27,40 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * Reverses the words in a string of words
- * @param {string} words A string of words seperated by spaces
- * @returns {string} The same string of words, except each word is now reversed
+ * Calculates the nth Fibonacci number (O(n) time complexity)
+ * @param {number} nthFib Which Fibonacci number we want
+ * @returns {number} The nthFib Fibonacci number
  * @example
- * const words = 'See spot run';
- * console.log(reverseInPlace(words)); // eeS tops nur
+ * const nthFib = 12;
+ * console.log(getNthFib(nthFib)); // 144
  */
-function reverseInPlace(words) {
-  const origWordsArr = words.split(' ');
-  const newWordsArr = origWordsArr.map(word => word.split('').reverse().join(''));
-  return newWordsArr.join(' ');
+function getNthFib(nthFib) {
+  const fibs = [0, 1];
+
+  if (nthFib &lt;= 2) {
+    return 1;
+  }
+
+  for (let i = 2; i &lt;= nthFib; i++) {
+    fibs[i] = fibs[i - 2] + fibs[i - 1];
+  }
+  // console.log(fibs);
+  return fibs[nthFib];
+}
+
+/**
+ * Returns the nthFib Fibonacci number (O(2^n) time complexity -- http://stackoverflow.com/a/360773)
+ * @param {number} nthFib Which Fibonacci number we want
+ * @returns {number} The nthFib Fibonacci number
+ * @example
+ * const nthFib = 12;
+ * console.log(getNthFibRecursive(nthFib)); // 144
+ */
+function getNthFibRecursive(nthFib) {
+  if (nthFib &lt;= 1) {
+    return nthFib;
+  }
+  return getNthFibRecursive(nthFib - 2) + getNthFibRecursive(nthFib - 1);
 }
 </code></pre>
         </article>

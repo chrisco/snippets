@@ -1,6 +1,6 @@
 # Snippets
 
-A repo for random snippets (katas, useful stuff)
+A repo for little random snippets (small katas, functions, etc.)
 
 ## ESLint With the Airbnb JavaScript Style Guide and JSDoc
 
@@ -32,18 +32,13 @@ For the JSDoc, I did this:
 
 ```
 $ npm install jsdoc --save-dev
-$ ./node_modules/jsdoc/jsdoc.js snippets/reverseInPlace.js // The only file with JSDoc comments so far
+$ ./node_modules/jsdoc/jsdoc.js snippets/reverseInPlace.js // Generate JSDoc for single file
+$ ./node_modules/jsdoc/jsdoc.js snippets -r  // Generate JSDoc for all files in the directory
 ```
 
-See JSDocs here: [./out/index.html](out/index.html) (open file in browser).
+The generated JSDocs: [./out/index.html](out/index.html) (open file in browser).
 
-NOTE: When I have more files with JSDoc comments, I should be able point to the directory with all the files (instead of just one file, as I did above).
-
-Example from [Command-line arguments to JSDoc](http://usejsdoc.org/about-commandline.html): Generate documentation for files in the ./src directory, using the configuration file /path/to/my/conf.json, and save the output in the ./docs directory:
-```
-$ /path/to/jsdoc src -r -c /path/to/my/conf.json -d docs
-```
-
+Command-line arguments to JSDoc: http://usejsdoc.org/about-commandline.html
 
 ### TODOs
 

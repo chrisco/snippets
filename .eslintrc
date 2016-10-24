@@ -22,6 +22,7 @@
             "ClassDeclaration": true
         }
     }],
-    "no-unused-vars": ["warn", { "vars": "all", "args": "after-used" }]
+    "no-unused-vars": ["warn", { "vars": "all", "args": "after-used" }],
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }]
   }
 }
