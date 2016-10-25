@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: getGCD.js</title>
+    <title>JSDoc: Source: primeFactors.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: getGCD.js</h1>
+    <h1 class="page-title">Source: primeFactors.js</h1>
 
     
 
@@ -27,26 +27,26 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * Calculates the Greatest Common Divisor (GCD) of two numbers
- * @param {number} n1 The first number
- * @param {number} n2 The second number
- * @returns {number} The GCD of n1 and n2
+ * Calculates the prime factors of a number
+ * @param {number} num The number whose prime factors we wish to calculate
+ * @returns {array} A new, merged, array
  * @example
- * const n1 = 12;
- * const n2 = 15;
- * console.log(getGCD(n1, n2)); // 3
+ * const num = 99;
+ * console.log(primeFactors(99)); // [1, 2, 3, 4, 5, 6, 7, 8, 9]
  */
-function getGCD(n1, n2) {
-  let divisor = 2;
-  let gcd = 1;
+function primeFactors(num) {
+  const primeFactors = [];
+  let divisor = 3;
 
-  while (n1 >= divisor &amp;&amp; n2 >= divisor) {
-    if (n1 % divisor === 0 &amp;&amp; n2 % divisor === 0) {
-      gcd = divisor;
+  while (num > 3) {
+    if (num % divisor === 0) {
+      primeFactors.push(divisor);
+      num = num / divisor;
+    } else {
+      divisor += 1;
     }
-    divisor += 1;
   }
-  return gcd;
+  return primeFactors;
 }
 </code></pre>
         </article>

@@ -21,7 +21,7 @@ function getNthFib(nthFib) {
 }
 
 /**
- * Returns the nthFib Fibonacci number (O(2^n) time complexity -- http://stackoverflow.com/a/360773)
+ * Calculates the nthFib Fibonacci number (O(2^n) time complexity -- http://stackoverflow.com/a/360773)
  * @param {number} nthFib Which Fibonacci number we want
  * @returns {number} The nthFib Fibonacci number
  * @example

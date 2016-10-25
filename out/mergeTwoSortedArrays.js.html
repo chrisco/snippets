@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: getGCD.js</title>
+    <title>JSDoc: Source: mergeTwoSortedArrays.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: getGCD.js</h1>
+    <h1 class="page-title">Source: mergeTwoSortedArrays.js</h1>
 
     
 
@@ -27,26 +27,32 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * Calculates the Greatest Common Divisor (GCD) of two numbers
- * @param {number} n1 The first number
- * @param {number} n2 The second number
- * @returns {number} The GCD of n1 and n2
+ * Merge two sorted arrays
+ * @param {array} a1 The first array
+ * @param {array} a2 The second array
+ * @returns {array} A new, merged, array
  * @example
- * const n1 = 12;
- * const n2 = 15;
- * console.log(getGCD(n1, n2)); // 3
+ * const a1 = [1, 3, 5, 7];
+ * const a2 = [2, 4, 6, 8];
+ * console.log(mergeTwoSortedArrays(a1, a2)); // [1, 2, 3, 4, 5, 6, 7, 8, 9]
  */
-function getGCD(n1, n2) {
-  let divisor = 2;
-  let gcd = 1;
+function mergeTwoSortedArrays(a1, a2) {
+  const mergedArray = [];
+  let a1Elem = a1[0];
+  let a2Elem = a2[0];
+  let a1Indx = 1;
+  let a2Indx = 1;
 
-  while (n1 >= divisor &amp;&amp; n2 >= divisor) {
-    if (n1 % divisor === 0 &amp;&amp; n2 % divisor === 0) {
-      gcd = divisor;
+  while (a1Elem || a2Elem) {
+    if ((a1Elem &amp;&amp; !a2Elem) || (a1Elem &lt; a2Elem)) {
+      mergedArray.push(a1Elem);
+      a1Elem = a1[a1Indx++];
+    } else {
+      mergedArray.push(a2Elem);
+      a2Elem = a2[a2Indx++];
     }
-    divisor += 1;
   }
-  return gcd;
+  return mergedArray;
 }
 </code></pre>
         </article>
