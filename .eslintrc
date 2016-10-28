@@ -1,4 +1,5 @@
-# This came from: http://www.acuriousanimal.com/2016/08/14/configuring-atom-with-eslint.html
+# From: http://www.acuriousanimal.com/2016/08/14/configuring-atom-with-eslint.html
+# Then I began editing it
 {
   "extends": "airbnb",
   "parser": "babel-eslint",

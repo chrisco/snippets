@@ -1,23 +1,27 @@
-"use strict";
-
-// Pass array to the new Set constructor:
-let myArray1 = [1, 2, 3, 3, 4, 5, 5];
-
-function dedupe1(array) {
-	return new Set(array);
+/**
+ * Removes duplicates from an array
+ * @param {array} array An array with duplicates
+ * @returns {array} The The array wthout dublicates
+ * @example
+ * const arr = [1, 2, 3, 3, 4, 5, 5];
+ * console.log(deDupe1(arr)); // XXXXXXX
+ */
+function deDupe1(array) {
+  return new Set(array);
 }
 
-console.log(dedupe1(myArray1));
-
-// Do it with a for-of loop:
-let myArray2 = [1, 2, 3, 3, 4, 4, 5];
-
-function dedupe2(array) {
-	const result = new Set();
-	for (let item of array) {
-		result.add(item);
-	}
-	return result;
+/**
+ * Removes duplicates from an array
+ * @param {array} array An array with duplicates
+ * @returns {array} The The array wthout dublicates
+ * @example
+ * const arr = [1, 2, 3, 3, 4, 5, 5];
+ * console.log(deDupe2(arr)); // XXXXXXX
+ */
+function deDupe2(array) {
+  const result = new Set();
+  for (const item of array) {
+    result.add(item);
+  }
+  return result;
 }
-
-console.log(dedupe2(myArray2));
