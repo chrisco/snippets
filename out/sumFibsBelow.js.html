@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: getNthFibonacciNumber.js</title>
+    <title>JSDoc: Source: sumFibsBelow.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: getNthFibonacciNumber.js</h1>
+    <h1 class="page-title">Source: sumFibsBelow.js</h1>
 
     
 
@@ -27,40 +27,25 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * Calculates the nth Fibonacci number (O(n) time complexity)
- * @param {number} nthFib Which Fibonacci number we want
- * @returns {number} The nthFib Fibonacci number
+ * Sums the fibonacci numbers from 1 to the largest fibonacci number below n
+ * @param {number} n The upper limit
+ * @returns {number} The sum
  * @example
- * const nthFib = 12;
- * console.log(getNthFib(nthFib)); // 144
+ * const n = 100;
+ * sumFibsBelow(n) // 44
  */
-function getNthFib(nthFib) {
-  const fibs = [0, 1];
+function sumFibsBelow(n) {
+  const fibs = [1, 1];
+  let evens = [];
 
-  if (nthFib &lt;= 2) {
-    return 1;
+  for (let i = 1; fibs[i] &lt; n; i++) {
+    fibs.push(fibs[i - 1] + fibs[i]);
   }
+  fibs.pop();
 
-  for (let i = 2; i &lt;= nthFib; i++) {
-    fibs[i] = fibs[i - 2] + fibs[i - 1];
-  }
-  // console.log(fibs);
-  return fibs[nthFib];
-}
+  evens = fibs.filter(x => x % 2 === 0);
 
-/**
- * Calculates the nthFib Fibonacci number (O(2^n) time complexity -- http://stackoverflow.com/a/360773)
- * @param {number} nthFib Which Fibonacci number we want
- * @returns {number} The nthFib Fibonacci number
- * @example
- * const nthFib = 12;
- * console.log(getNthFibRecursive(nthFib)); // 144
- */
-function getNthFibRecursive(nthFib) {
-  if (nthFib &lt;= 1) {
-    return nthFib;
-  }
-  return getNthFibRecursive(nthFib - 2) + getNthFibRecursive(nthFib - 1);
+  return evens.reduce((a, b) => a + b, 0);
 }
 </code></pre>
         </article>

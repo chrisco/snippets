@@ -22,7 +22,7 @@ $ npm install eslint-plugin-import@^1.16.0 --save-dev // Worked
 
 NOTE: I could have done all the above commands in one line, but I was following the error messages that were popping up in Atom. Next time.
 
-Then I created the ```.eslintrc``` file and pasted in the code from the above linked "Atom" blog post, but modifying the rule about [no-unused-vars](http://eslint.org/docs/rules/no-unused-vars) from "error" to "warn."
+Then I created the ```.eslintrc``` file and pasted in the code from the above linked "Atom" blog post, but modifying the rule about [no-unused-vars](http://eslint.org/docs/rules/no-unused-vars) from "error" to "warn." Continuing to modify rules as I go.
 
 That seemed to work except that I had trouble configuring Atom Beautify indentation, so I wound up creating a ```.jsbeautifyrc``` file and pasting in, then editing, the configurations I found I found it that file in the Atom config directory: ```./atom/packages/atom-beautify/src/.jsbeautifyrc```
 

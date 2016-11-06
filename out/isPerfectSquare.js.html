@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: getNthFibonacciNumber.js</title>
+    <title>JSDoc: Source: isPerfectSquare.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: getNthFibonacciNumber.js</h1>
+    <h1 class="page-title">Source: isPerfectSquare.js</h1>
 
     
 
@@ -27,40 +27,17 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * Calculates the nth Fibonacci number (O(n) time complexity)
- * @param {number} nthFib Which Fibonacci number we want
- * @returns {number} The nthFib Fibonacci number
+ * Tests whether a number is a perfect square or not
+ * @param {number} n The number to test
+ * @returns {boolean} true if the number is a perfect square, else false
  * @example
- * const nthFib = 12;
- * console.log(getNthFib(nthFib)); // 144
+ * const n1 = 4;
+ * const n2 = 5;
+ * isPerfectSquare(n1) // true
+ * isPerfectSquare(n2) // false
  */
-function getNthFib(nthFib) {
-  const fibs = [0, 1];
-
-  if (nthFib &lt;= 2) {
-    return 1;
-  }
-
-  for (let i = 2; i &lt;= nthFib; i++) {
-    fibs[i] = fibs[i - 2] + fibs[i - 1];
-  }
-  // console.log(fibs);
-  return fibs[nthFib];
-}
-
-/**
- * Calculates the nthFib Fibonacci number (O(2^n) time complexity -- http://stackoverflow.com/a/360773)
- * @param {number} nthFib Which Fibonacci number we want
- * @returns {number} The nthFib Fibonacci number
- * @example
- * const nthFib = 12;
- * console.log(getNthFibRecursive(nthFib)); // 144
- */
-function getNthFibRecursive(nthFib) {
-  if (nthFib &lt;= 1) {
-    return nthFib;
-  }
-  return getNthFibRecursive(nthFib - 2) + getNthFibRecursive(nthFib - 1);
+function isPerfectSquare(n) {
+  return (Math.sqrt(n) === Math.floor(Math.sqrt(n)));
 }
 </code></pre>
         </article>

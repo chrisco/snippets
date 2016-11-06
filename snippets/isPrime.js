@@ -1,5 +1,5 @@
 /**
- * Test whether a number is prime or not
+ * Tests whether a number is prime or not
  * @param {number} num The number to test
  * @returns {boolean} True if the number is prime, else false
  * @example

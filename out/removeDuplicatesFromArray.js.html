@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: getNthFibonacciNumber.js</title>
+    <title>JSDoc: Source: removeDuplicatesFromArray.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: getNthFibonacciNumber.js</h1>
+    <h1 class="page-title">Source: removeDuplicatesFromArray.js</h1>
 
     
 
@@ -27,40 +27,31 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * Calculates the nth Fibonacci number (O(n) time complexity)
- * @param {number} nthFib Which Fibonacci number we want
- * @returns {number} The nthFib Fibonacci number
+ * Removes duplicates from an array
+ * @param {array} array An array with duplicates
+ * @returns {array} The The array wthout dublicates
  * @example
- * const nthFib = 12;
- * console.log(getNthFib(nthFib)); // 144
+ * const arr = [1, 2, 3, 3, 4, 5, 5];
+ * console.log(deDupe1(arr)); // XXXXXXX
  */
-function getNthFib(nthFib) {
-  const fibs = [0, 1];
-
-  if (nthFib &lt;= 2) {
-    return 1;
-  }
-
-  for (let i = 2; i &lt;= nthFib; i++) {
-    fibs[i] = fibs[i - 2] + fibs[i - 1];
-  }
-  // console.log(fibs);
-  return fibs[nthFib];
+function deDupe1(array) {
+  return new Set(array);
 }
 
 /**
- * Calculates the nthFib Fibonacci number (O(2^n) time complexity -- http://stackoverflow.com/a/360773)
- * @param {number} nthFib Which Fibonacci number we want
- * @returns {number} The nthFib Fibonacci number
+ * Removes duplicates from an array
+ * @param {array} array An array with duplicates
+ * @returns {array} The The array wthout dublicates
  * @example
- * const nthFib = 12;
- * console.log(getNthFibRecursive(nthFib)); // 144
+ * const arr = [1, 2, 3, 3, 4, 5, 5];
+ * console.log(deDupe2(arr)); // XXXXXXX
  */
-function getNthFibRecursive(nthFib) {
-  if (nthFib &lt;= 1) {
-    return nthFib;
+function deDupe2(array) {
+  const result = new Set();
+  for (const item of array) {
+    result.add(item);
   }
-  return getNthFibRecursive(nthFib - 2) + getNthFibRecursive(nthFib - 1);
+  return result;
 }
 </code></pre>
         </article>
