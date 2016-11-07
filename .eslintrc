@@ -24,6 +24,9 @@
         }
     }],
     "no-unused-vars": ["warn", { "vars": "all", "args": "after-used" }],
-    "no-plusplus": ["warn", { "allowForLoopAfterthoughts": true }]
+    "no-plusplus": ["warn", { "allowForLoopAfterthoughts": true }],
+    "no-shadow": "warn",
+    "operator-assignment": "warn",
+    "no-param-reassign": "warn",
   }
 }

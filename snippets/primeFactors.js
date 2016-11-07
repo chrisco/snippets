@@ -1,10 +1,10 @@
 /**
  * Calculates the prime factors of a number
  * @param {number} num The number whose prime factors we wish to calculate
- * @returns {array} A new, merged, array
+ * @returns {array} An array containing the prime factors
  * @example
  * const num = 99;
- * console.log(primeFactors(99)); // [1, 2, 3, 4, 5, 6, 7, 8, 9]
+ * console.log(primeFactors(99)); // [ 3, 3, 11 ]
  */
 function primeFactors(num) {
   const primeFactors = [];

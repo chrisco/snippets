@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>JSDoc: Source: primeFactors.js</title>
+    <title>JSDoc: Source: reverseString1.js</title>
 
     <script src="scripts/prettify/prettify.js"> </script>
     <script src="scripts/prettify/lang-css.js"> </script>
@@ -17,7 +17,7 @@
 
 <div id="main">
 
-    <h1 class="page-title">Source: primeFactors.js</h1>
+    <h1 class="page-title">Source: reverseString1.js</h1>
 
     
 
@@ -27,26 +27,15 @@
     <section>
         <article>
             <pre class="prettyprint source linenums"><code>/**
- * Calculates the prime factors of a number
- * @param {number} num The number whose prime factors we wish to calculate
- * @returns {array} An array containing the prime factors
+ * Reverses a string
+ * @param {string} str The string to be reversed
+ * @returns {string} The reveresed string
  * @example
- * const num = 99;
- * console.log(primeFactors(99)); // [ 3, 3, 11 ]
+ * const foo = "foo";
+ * console.log(reverseString1(foo)); // oof
  */
-function primeFactors(num) {
-  const primeFactors = [];
-  let divisor = 3;
-
-  while (num > 3) {
-    if (num % divisor === 0) {
-      primeFactors.push(divisor);
-      num = num / divisor;
-    } else {
-      divisor += 1;
-    }
-  }
-  return primeFactors;
+function reverseString1(str) {
+  return str.split('').reverse().join('');
 }
 </code></pre>
         </article>

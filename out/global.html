@@ -101,7 +101,7 @@
 
     
 
-    <h4 class="name" id="deDupe1"><span class="type-signature"></span>deDupe1<span class="signature">(array)</span><span class="type-signature"> &rarr; {array}</span></h4>
+    <h4 class="name" id="deDupe1"><span class="type-signature"></span>deDupe1<span class="signature">(arr)</span><span class="type-signature"> &rarr; {array}</span></h4>
 
     
 
@@ -144,7 +144,7 @@
 
         <tr>
             
-                <td class="name"><code>array</code></td>
+                <td class="name"><code>arr</code></td>
             
 
             <td class="type">
@@ -201,7 +201,7 @@
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="removeDuplicatesFromArray.js.html">removeDuplicatesFromArray.js</a>, <a href="removeDuplicatesFromArray.js.html#line9">line 9</a>
+        <a href="removeDuplicatesFromArray1.js.html">removeDuplicatesFromArray1.js</a>, <a href="removeDuplicatesFromArray1.js.html#line9">line 9</a>
     </li></ul></dd>
     
 
@@ -228,7 +228,7 @@
 
         
 <div class="param-desc">
-    The The array wthout dublicates
+    The array wthout dublicates (i.e., a Set)
 </div>
 
 
@@ -251,7 +251,7 @@
     <h5>Example</h5>
     
     <pre class="prettyprint"><code>const arr = [1, 2, 3, 3, 4, 5, 5];
-console.log(deDupe1(arr)); // XXXXXXX</code></pre>
+console.log(deDupe1(arr)); // [1, 2, 3, 4, 5]</code></pre>
 
 
 
@@ -260,7 +260,7 @@ console.log(deDupe1(arr)); // XXXXXXX</code></pre>
 
     
 
-    <h4 class="name" id="deDupe2"><span class="type-signature"></span>deDupe2<span class="signature">(array)</span><span class="type-signature"> &rarr; {array}</span></h4>
+    <h4 class="name" id="deDupe2"><span class="type-signature"></span>deDupe2<span class="signature">(arr)</span><span class="type-signature"> &rarr; {array}</span></h4>
 
     
 
@@ -303,7 +303,7 @@ console.log(deDupe1(arr)); // XXXXXXX</code></pre>
 
         <tr>
             
-                <td class="name"><code>array</code></td>
+                <td class="name"><code>arr</code></td>
             
 
             <td class="type">
@@ -360,7 +360,7 @@ console.log(deDupe1(arr)); // XXXXXXX</code></pre>
     
     <dt class="tag-source">Source:</dt>
     <dd class="tag-source"><ul class="dummy"><li>
-        <a href="removeDuplicatesFromArray.js.html">removeDuplicatesFromArray.js</a>, <a href="removeDuplicatesFromArray.js.html#line21">line 21</a>
+        <a href="removeDuplicatesFromArray2.js.html">removeDuplicatesFromArray2.js</a>, <a href="removeDuplicatesFromArray2.js.html#line9">line 9</a>
     </li></ul></dd>
     
 
@@ -387,7 +387,7 @@ console.log(deDupe1(arr)); // XXXXXXX</code></pre>
 
         
 <div class="param-desc">
-    The The array wthout dublicates
+    The array wthout dublicates (i.e., a Set)
 </div>
 
 
@@ -410,7 +410,7 @@ console.log(deDupe1(arr)); // XXXXXXX</code></pre>
     <h5>Example</h5>
     
     <pre class="prettyprint"><code>const arr = [1, 2, 3, 3, 4, 5, 5];
-console.log(deDupe2(arr)); // XXXXXXX</code></pre>
+console.log(deDupe2(arr)); // [1, 2, 3, 4, 5]</code></pre>
 
 
 
@@ -1552,7 +1552,7 @@ console.log(mergeTwoSortedArrays(a1, a2)); // [1, 2, 3, 4, 5, 6, 7, 8, 9]</code>
 
         
 <div class="param-desc">
-    A new, merged, array
+    An array containing the prime factors
 </div>
 
 
@@ -1575,7 +1575,7 @@ console.log(mergeTwoSortedArrays(a1, a2)); // [1, 2, 3, 4, 5, 6, 7, 8, 9]</code>
     <h5>Example</h5>
     
     <pre class="prettyprint"><code>const num = 99;
-console.log(primeFactors(99)); // [1, 2, 3, 4, 5, 6, 7, 8, 9]</code></pre>
+console.log(primeFactors(99)); // [ 3, 3, 11 ]</code></pre>
 
 
 
@@ -1926,6 +1926,483 @@ console.log(reverseInPlace(words)); // eeS tops nur</code></pre>
 
     
 
+    <h4 class="name" id="reverseString1"><span class="type-signature"></span>reverseString1<span class="signature">(str)</span><span class="type-signature"> &rarr; {string}</span></h4>
+
+    
+
+
+
+<div class="description">
+    Reverses a string
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>str</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The string to be reversed</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="reverseString1.js.html">reverseString1.js</a>, <a href="reverseString1.js.html#line9">line 9</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    The reveresed string
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">string</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const foo = "foo";
+console.log(reverseString1(foo)); // oof</code></pre>
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="reverseString2"><span class="type-signature"></span>reverseString2<span class="signature">(str)</span><span class="type-signature"> &rarr; {string}</span></h4>
+
+    
+
+
+
+<div class="description">
+    Reverses a string
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>str</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The string to be reversed</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="reverseString2.js.html">reverseString2.js</a>, <a href="reverseString2.js.html#line9">line 9</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    The reveresed string
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">string</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const foo = "foo";
+console.log(reverseString2(foo)); // oof</code></pre>
+
+
+
+        
+            
+
+    
+
+    <h4 class="name" id="reverseString3"><span class="type-signature"></span>reverseString3<span class="signature">(str)</span><span class="type-signature"> &rarr; {string}</span></h4>
+
+    
+
+
+
+<div class="description">
+    Reverses a string
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>str</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">string</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The string to be reversed</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+    <dt class="tag-source">Source:</dt>
+    <dd class="tag-source"><ul class="dummy"><li>
+        <a href="reverseString3.js.html">reverseString3.js</a>, <a href="reverseString3.js.html#line9">line 9</a>
+    </li></ul></dd>
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    The reveresed string
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">string</span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+    <h5>Example</h5>
+    
+    <pre class="prettyprint"><code>const foo = "foo";
+console.log(reverseString3(foo)); // oof</code></pre>
+
+
+
+        
+            
+
+    
+
     <h4 class="name" id="sumFibsBelow"><span class="type-signature"></span>sumFibsBelow<span class="signature">(n)</span><span class="type-signature"> &rarr; {number}</span></h4>
 
     
@@ -2096,13 +2573,13 @@ sumFibsBelow(n) // 44</code></pre>
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#deDupe1">deDupe1</a></li><li><a href="global.html#deDupe2">deDupe2</a></li><li><a href="global.html#getGCD">getGCD</a></li><li><a href="global.html#getNthFib">getNthFib</a></li><li><a href="global.html#getNthFibRecursive">getNthFibRecursive</a></li><li><a href="global.html#isPerfectSquare">isPerfectSquare</a></li><li><a href="global.html#isPrime">isPrime</a></li><li><a href="global.html#mergeTwoSortedArrays">mergeTwoSortedArrays</a></li><li><a href="global.html#primeFactors">primeFactors</a></li><li><a href="global.html#recursiveGCD">recursiveGCD</a></li><li><a href="global.html#reverseInPlace">reverseInPlace</a></li><li><a href="global.html#sumFibsBelow">sumFibsBelow</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Global</h3><ul><li><a href="global.html#deDupe1">deDupe1</a></li><li><a href="global.html#deDupe2">deDupe2</a></li><li><a href="global.html#getGCD">getGCD</a></li><li><a href="global.html#getNthFib">getNthFib</a></li><li><a href="global.html#getNthFibRecursive">getNthFibRecursive</a></li><li><a href="global.html#isPerfectSquare">isPerfectSquare</a></li><li><a href="global.html#isPrime">isPrime</a></li><li><a href="global.html#mergeTwoSortedArrays">mergeTwoSortedArrays</a></li><li><a href="global.html#primeFactors">primeFactors</a></li><li><a href="global.html#recursiveGCD">recursiveGCD</a></li><li><a href="global.html#reverseInPlace">reverseInPlace</a></li><li><a href="global.html#reverseString1">reverseString1</a></li><li><a href="global.html#reverseString2">reverseString2</a></li><li><a href="global.html#reverseString3">reverseString3</a></li><li><a href="global.html#sumFibsBelow">sumFibsBelow</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.2</a> on Sat Nov 05 2016 19:53:38 GMT-0600 (MDT)
+    Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.2</a> on Mon Nov 07 2016 14:10:43 GMT-0700 (MST)
 </footer>
 
 <script> prettyPrint(); </script>
