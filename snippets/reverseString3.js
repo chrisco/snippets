@@ -7,15 +7,15 @@
  * console.log(reverseString3(foo)); // oof
  */
 function reverseString3(str) {
-  const reversed = [];
-
   if (!str || typeof str !== 'string' || str.length < 2) {
     return str;
   }
 
+  let reversed = '';
+
   for (let i = str.length - 1; i >= 0; i--) {
-    reversed.push(str[i]);
+    reversed = reversed + str[i];
   }
 
-  return reversed.join('');
+  return reversed;
 }
