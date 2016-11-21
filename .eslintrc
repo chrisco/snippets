@@ -16,7 +16,7 @@
       "requireParamDescription": true,
       "requireReturnDescription": true
     }],
-    "require-jsdoc": ["error", {
+    "require-jsdoc": ["warn", {
         "require": {
             "FunctionDeclaration": true,
             "MethodDefinition": true,
@@ -28,5 +28,6 @@
     "no-shadow": "warn",
     "operator-assignment": "warn",
     "no-param-reassign": "warn",
+    "no-use-before-define": "warn",
   }
 }
